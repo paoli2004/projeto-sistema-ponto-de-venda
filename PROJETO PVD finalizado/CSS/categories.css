@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.categories_content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+nav {
+    width: 100%;
+    background-color: rgb(112, 46, 235);
+    color: rgba(32, 31, 31, 0.979);
+    padding: 9px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    
+}
+ul #title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+li a {
+    padding: 30px;
+    color: rgba(32, 31, 31, 0.979);
+    text-decoration: none;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.line {
+    border-left: 1px black solid;
+    height: 1000px;
+    align-content: center;
+    margin: 0 20px;
+
+}
+
+.left_categories {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1%
+}
+
+
+.main-input {
+    width: 50%;
+    display: flex;
+}
+
+.misc-inputs {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.add_category {
+    background-color: rgb(112, 46, 235);
+    color: solid black;
+    cursor: pointer;
+    font-family: Verdana;
+    border: 1px solid;
+    font-size: 12px;
+    width: 80%;
+    justify-content: center;
+    margin: 2vh 0 0 0;
+    border-radius: 5px;
+}
+
+.table_categories {
+    width: 75%;
+    margin-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#delete {
+    border-top: none;
+    border-right: none;
+}
+
+.empty {
+    border: none;
+    padding-right: 100px;
+}
+
+th,
+td {
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+th{
+    border-top: none;
+}
+
+#th_code {
+    padding-right: 100px;
+}
+
+td {
+    color: grey;
+    max-width: 200px;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}
+
+button {
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+.btn-delete-button {
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+    margin: 2vh 0 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#clean_categories {
+    float: right;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(112, 46, 235);
+    color: white;
+    font-family: Verdana;
+}

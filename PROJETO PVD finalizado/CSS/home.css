@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(112, 46, 235);
+    color: rgba(32, 31, 31, 0.979);
+    padding: 9px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1%;
+}
+
+.main-input {
+    width: 100%;
+    display: flex;
+}
+
+.misc-inputs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+ul #title {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: auto;
+    
+}
+
+li a {
+    padding: 30px;
+    color: rgba(32, 31, 31, 0.979);
+    text-decoration: none;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+
+.home_content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.line {
+    border-left: 1px black solid;
+    height: 1000px;
+    align-content: center;
+    margin: 0 20px;
+}
+
+.home_content #select_product {
+    width: 100%;
+    padding: 5px;
+    font-size: 12px;
+
+}
+
+.home_content #amount {
+    height: 10px;
+    width: 60%;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+
+}
+
+.home_content #tax {
+    height: 10px;
+    width: 45%;
+    padding: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.home_content #unit_price {
+    width: 45%;
+    height: 10px;
+    padding: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home_table {
+    width: 100%;
+    margin-left: 20px;
+}
+
+th,
+td {
+    padding: 5px;
+    font-size: 14px;
+    text-align: left;
+    border-right: 1px solid grey;
+}
+
+td {
+    color: grey;
+    max-width: 200px;
+}
+
+tr {
+    border-bottom: 1px solid grey;
+}
+
+#tr_body {
+    border-bottom: none;
+}
+
+#last-row {
+    border-top: 1px solid grey;
+    border-bottom: none;
+    height: 40vh;
+}
+
+
+.right input {
+    margin-top: 2%;
+    border: 0;
+    width: 30%;
+}
+
+.right label {
+    margin-left: 60%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#finish {
+    margin-top: 5%;
+    float: right;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: Verdana;
+    background-color: rgb(112, 46, 235);
+    color: black;
+    width: 30%;
+    border-radius: 5px;
+
+}
+
+#cancel {
+    margin-top: 5%;
+    float: right;
+    margin-left: 2%;
+    cursor: pointer;
+    font-family: Verdana;
+    color: black;
+    width: 30%;
+    border-radius: 5px;
+}
+
+#add_product {
+    background-color: rgb(112, 46, 235);
+    color: solid black;
+    cursor: pointer;
+    font-family: Verdana;
+    border: 1px solid;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+option:first {
+    color: #999;
+}
+
+select {
+    color: #999;
+}
+
+.btn-home-delete-product {
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+    margin: 2vh 0 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO PVD - HOME</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href='./Home.html' id="title">Suite Store</a></li>
+                <li><a href='./Products.html'>Products</a></li>
+                <li><a href='./Categories.html'>Categories</a></li>
+                <li><a href='./History.html'>History</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+        </div>
+        <div class="home_content">
+
+            <div class="left">
+                <h1>Home</h1>
+                <div class="main-input">
+                    <select id="select_product">
+                        <option value="">Product</option> 
+                    </select>
+                </div>
+                <div class="misc-inputs">
+                    <input type="number" placeholder="Amount" id="amount">
+                    <input disabled type="number" id="category_tax" placeholder="Tax" readonly>
+                    <input disabled type="number" id="unit_price" placeholder="Price" readonly>
+                </div>
+                <input type="button" value="Add Product" onclick="setHome()" name="add_product" id="add_product">
+            </div>
+
+            <div class="line"></div>
+
+            <div class="right">
+                <div class="home_table">
+                    <table>
+                        <tr>
+                            <thead>
+                                <th title="Product" id="thProduct">Product</th>
+                                <th title="Unit price">Unit Price</th>
+                                <th title="Amount">Amount</th>
+                                <th title="tax">Tax</th>
+                                <th title="Product" id="product_sum">Total</th>
+                            </thead>
+                        </tr>
+                        <tbody id="home_tbody">
+                            <tr id="tr_body">
+                            <tr id="last_row">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="label">
+                    <label>Tax:</label><input type="text" name="final_tax" id="final_tax" readonly>
+                    <label>Total:</label><input type="text" name="final_total" id="final_total" readonly>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="Cancel" onclick="cancelBtn()" name="cancel_button" id="cancel">
+                    <input type="button" value="Finish" onclick="finishBtn()" name="finish_button" id="finish">
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../JS/home.js"></script>
+</body>
+
+</html>

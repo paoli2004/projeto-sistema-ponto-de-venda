@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(112, 46, 235);
+    color: rgba(32, 31, 31, 0.979);
+    padding: 9px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+ul #title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+li a {
+    padding: 30px;
+    color: rgba(32, 31, 31, 0.979);
+    text-decoration: none;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.history_content {
+    padding: 30px;
+    width: 90%;
+}
+
+.history_table {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    align-content: center;
+    height: 20%;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+th,
+td {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-right: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid black;
+}
+
+td {
+    color: grey;
+    border-bottom: 1px solid black;
+}
+
+#thead_history {
+    border-left: 1px solid black;
+}
+
+#tbody_history {
+    border-left: 1px solid black;
+}
+
+#empty {
+    border: none;
+}
+
+#clean_history {
+    border-radius: 5px;
+    background-color: rgb(112, 46, 235);
+    color: white;
+    cursor: pointer;
+    font-family: Verdana;
+    margin-top: 5%;
+    float: right;
+    margin-right: 12%;
+}
+
+#janela_modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    overflow: auto;
+}
+
+.modal {
+    background-color: #fffafa;
+    margin: 10% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal_content {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#modal_table{
+    width: 100%;
+    margin-top: 3%;
+}
+
+#close {
+    color: #aaa;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-history-delete-product {
+    background-color: rgba(255, 0, 0, 0.774);
+    color: white;
+    margin: 2vh 0 0 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-home-view-row {
+    background-color: rgb(112, 46, 235);
+    color: white;
+    margin: 2vh 0 0 0;
+    border-radius: 10px;
+    cursor: pointer; 
+}

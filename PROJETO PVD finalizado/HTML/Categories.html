@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO PVD - CATEGORIES</title>
+    <link rel="stylesheet" href="../CSS/categories.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href='./Home.html' id="title">Suite Store</a></li>
+                <li><a href='./Products.html'>Products</a></li>
+                <li><a href='./Categories.html'>Categories</a></li>
+                <li><a href='./History.html'>History</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+
+        </div>
+        <div class="categories_content">
+            <div class="left_categories">
+                <h1>Categories</h1>
+                <div class="main_inputs">
+                    <input type="text" id="category_name" name="category_name" placeholder="Category" required>
+                    <input type="number" id="category_tax" name="category_tax" placeholder="Tax" required>
+                </div>
+                <div class="misc_input">
+                    <input type="button" value="add category" onclick="setCategories()" name="add_category"
+                        class="add_category"></input>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="table_categories">
+                <table>
+                    <tr>
+                        <thead>
+                            <th id="th_code" title="Code">Code</th>
+                            <th title="Category">Category</th>
+                            <th title="Tax">Tax</th>
+                            <th class="empty"></th>
+                        </thead>
+                    </tr>
+                    <tbody id="category_tbody">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear_button">
+                    <button id="clean_categories" onclick="clearCategories()">Clean Categories</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../JS/categories.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO PVD - HISTORY</title>
+    <link rel="stylesheet" href="../CSS/history.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href='./Home.html' id="title">Suite Store</a></li>
+                <li><a href='./Products.html'>Products</a></li>
+                <li><a href='./Categories.html'>Categories</a></li>
+                <li><a href='./History.html'>History</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+        </div>
+        <div class="history_content">
+            <h1>History</h1>
+            <div class="history_table">
+                <table>
+                    <thead id="thead_history">
+                        <tr>
+                            <th title="code">Code</th>
+                            <th title="product amount">Product Amount</th>
+                            <th title="total">Total</th>
+                            <th title="tax">Tax</th>
+                            <th title="total with tax">Total w/ Tax</th>
+                            <th title="date/time">Date/Time</th>
+                            <th id="empty"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody_history">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <button id="clean_history" onclick="clearHistory()">Clean History</button>
+    <div id="janela_modal">
+        <div class="modal">
+            <div class="modal_content">
+            </div>
+        </div>
+    </div>
+    <script src="../JS/history.js"></script>
+</body>
+
+</html>

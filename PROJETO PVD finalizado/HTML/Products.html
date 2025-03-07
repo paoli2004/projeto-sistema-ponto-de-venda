@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO PVD - PRODUCTS</title>
+    <link rel="stylesheet" href="../CSS/products.css">
+</head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href='./Home.html' id="title">Suite Store</a></li>
+                <li><a href='./Products.html'>Products</a></li>
+                <li><a href='./Categories.html'>Categories</a></li>
+                <li><a href='./History.html'>History</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+        </div>
+        <div class="products_content">
+            <div class="left">
+                <h1>Products</h1>
+                <div class="main-input">
+                    <input type="text" id="select_product" placeholder="Product" required>
+                </div>
+                <div class="misc-inputs">
+                    <input type="number" placeholder="Amount" id="amount" required>
+                    <select id="category">
+                        <option value="">Category</option>
+                    </select>
+                    <input type="number" id="unit_price" placeholder="Unit Price" required>
+                </div>
+                <input type="button" value="Add Product" onclick="setProduct()" name="add_product" class="add_product">
+            </div>
+            <div class="line"></div>
+
+            <div id="table_products">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th title="code" id="thCode">Code</th>
+                            <th title="Product">Product</th>
+                            <th title="Unit price">Unit Price</th>
+                            <th title="Amount">Amount</th>
+                            <th title="Category">Category</th>
+                            <th title="Total">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product_tbody">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clear_button">
+                    <button id="clean_products" onclick="cleanProducts()">Clean Products</button>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="../JS/products.js"></script>
+</body>
+
+</html>
